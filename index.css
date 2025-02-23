@@ -1,6 +1,6 @@
 /*basic setups*/
 * {
-    margin: 0;
+    margin: 0rem 4rem;
     padding: 0;
     box-sizing: border-box;
 
@@ -23,7 +23,7 @@ body {
     font-size: 1.2rem;
     gap: 2rem;
     justify-content: space-between;
-    padding: 0.7rem 4rem;
+    padding: 0.7rem 3rem;
     background-color: rgb(189, 227, 123);
 }
 
@@ -31,7 +31,6 @@ body {
     display: flex;
     justify-items: space-between;
     align-items: center;
-    gap: 15rem;
 }
 
 .myname {
@@ -58,7 +57,7 @@ body {
 }
 
 .computer-action {
-    padding: 0rem 80rem;
+    padding: 0rem 55rem;
     padding-top: 6rem;
     text-align: center;
     line-height: 3rem;
@@ -87,7 +86,7 @@ body {
     line-height: 3rem;
 }
 .player-action {
-    padding: 0rem 80rem;
+    padding: 0rem 55rem;
     padding-top: 12rem;
 }
 
