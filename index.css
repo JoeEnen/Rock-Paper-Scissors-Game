@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.6rem;
 }
+
 /*end of basic setups*/
 
 /*header section*/
@@ -32,6 +33,7 @@ body {
     align-items: center;
     gap: 15rem;
 }
+
 .myname {
     font-size: 2rem;
     color: black;
@@ -43,20 +45,50 @@ body {
     align-items: center;
     gap: 4rem;
 }
+
 /* end of header section*/
 
 /*hero sections*/
 .hero {
+
     background-color: rgb(189, 227, 123);
     height: 30vh;
+    font-weight: 600;
+    font-size: 2rem;
 }
+
+.computer-action {
+    padding: 0rem 80rem;
+    padding-top: 6rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.image-container {
+    height: 13rem;
+    width: 13rem;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
 
 /*end of hero*/
 
 /*action area*/
 .actionarea {
-height: 12vh;
-background-color: rgb(250, 237, 4);
+    height: 12vh;
+    background-color: rgb(250, 237, 4);
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.player-action {
+    padding: 0rem 80rem;
+    padding-top: 12rem;
 }
 
 /*end of action area*/
@@ -66,4 +98,5 @@ background-color: rgb(250, 237, 4);
     height: 52.9vh;
     background-color: rgb(189, 227, 123);
 }
+
 /*end of footer*/
