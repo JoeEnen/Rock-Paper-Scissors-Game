@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-items: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 /* end of header section*/
