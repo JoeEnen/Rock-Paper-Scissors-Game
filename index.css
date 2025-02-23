@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0.7rem 4rem;
+    background-color: rgb(246, 239, 90);
+}
+
+.hlinks {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    gap: 15rem;
+}
+.myname {
+    font-size: 2rem;
+    color: black;
+}
+
+.count-container {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+.hero {
+    background-color:  rgb(246, 239, 90);
+    height: 39vh;
+}
+
+/*end of hero*/
+
+/*action area*/
+.actionarea {
+height: 18vh;
+background-color: rgb(239, 241, 241);
+}
+
+/*end of action area*/
+
+/*footer*/
+.footer {
+    height: 37vh;
+    background-color:  rgb(246, 239, 90);
+}
+/*end of footer*/
