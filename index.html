@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="CSS stylesheet" href="index.css">
+    <link rel="JS stylesheet" href="styles.js">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,27 +29,48 @@
         </div>
     </div>
 
-    <section class="hero">
-        <div class="computer-action">
+    <section class="heroe">
+        <div class="action-display">
             <p>Computer</p>
-            <div class="image-container">
-                <img src="./Images/Box-use.png" alt="">
-            </div>
+            <p class="symbols">✊</p>
         </div>
     </section>
 
-    <search class="actionarea">
-        <div class="player-action">
-            <p>Player</p>
-            <div class="image-container">
-                <img src="./Images/Box-use.png" alt="">
-            </div>
-        </div>
-    </search>
+    <section class="actionarea">
+<p class="choice-displayer"> Currently Draw</p>
+    </section>
 
     <section class="footer">
-
+        <div class="action-display">
+            <p class="atext">Player</p>
+            <p class="symbols">✋</p>
+        </div>
+        </div>
     </section>
+
+
+
+    <section class="last-one">
+        <div class="choices">
+            <button class="decision" id="" onclick="playGame ('rock')">
+                <p class="symbol">✊</p>
+                <p> Rock</p>
+            </button>
+        </div>
+        <div class="choices">
+            <button class="decision" id="" onclick="playGame ('paper')">
+                <p class="symbol">✋</p>
+                <p>Paper</p>
+            </button>
+        </div>
+        <div class="choices">
+            <button class="decision" id="" onclick="playGame ('scissors')">
+                <p class="symbol">✌️</p>
+                <p> Scissors</p>
+            </button>
+        </div>
+    </section>
+
 </body>
 
 </html>
