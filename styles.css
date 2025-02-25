@@ -1,62 +1,62 @@
-/*basic setups*/
+/* Basic setups */
 * {
-    margin: 0rem 4rem;
-    padding: 0;
+    margin: 0rem 5rem;
+    padding: 0rem 1rem;
     box-sizing: border-box;
-
 }
 
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 
-/*end of basic setups*/
-
-/*header section*/
+/* Header section */
 .header {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
-    gap: 2rem;
+    font-size: 2rem;
+    gap: 1rem;
     justify-content: space-between;
-    padding: 0.7rem 3rem;
+    padding: 2rem 8rem;
     background-color: rgb(126, 240, 69);
 }
 
-.hlinks {
+.hlinks, .count-container {
     display: flex;
-    justify-items: space-between;
     align-items: center;
+    gap: 5rem;
+}
+.hlinks h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
 }
 
 .myname {
     font-size: 2rem;
     color: black;
+    margin-left: 10px;
 }
 
-
-
-/* end of header section*/
-
-/*hero sections*/
+/* Hero section */
 .heroe {
     background-color: rgb(126, 240, 69);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 30vh;      
+    font-family: 'Times New Roman', Times, serif;
+}
+.heroe p{
+    font-size: 3rem;
+    text-align: center;
 }
 
-
-
-
-/*end of hero*/
-
-/*action area*/
+/* Action area */
 .actionarea {
     height: 12vh;
     background-color: rgb(250, 237, 4);
@@ -66,23 +66,13 @@ body {
 }
 
 .actionarea p {
-    font-family: "Press to Start 2P", serif;
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-.action-display h1 {
-    text-align: center;
-    align-content: center;
-}
-
-/*.action-display for this section displayed in the footer as they share qualities).
-
-/*end of action area*/
-
-/*footer*/
+/* Footer */
 .footer {
-    height: 22.9vh;
+    height: 22vh;
     background-color: rgb(126, 240, 69);
     display: flex;
     align-items: center;
@@ -91,51 +81,44 @@ body {
 }
 
 .action-display {
-    align-items: center;
+    align-items: center; 
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .symbols {
     width: 13rem;
     height: 13rem;
     border: dashed black 3px;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
     font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-/*end of footer*/
-
-/*last one*/
+/* Choices section */
 .last-one {
     height: 30vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    padding: 1rem 35rem;
     background-color: rgb(126, 240, 69);
 }
 
-.choices {
+.choices button {
     width: 15rem;
     height: 15rem;
-
-}
-
-.choices button {
-    width: 100%;
-    height: 100%;
-}
-
-.decision {
     font-size: 2rem;
-    font-weight: 550;
+    font-weight: bold;
 }
 
-.symbol {
-    font-size: 8rem;
+.greenText {
+    color: green;
 }
 
-/*end of last one*/
+.redText {
+    color: red;
+}

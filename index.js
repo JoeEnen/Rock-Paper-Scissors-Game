@@ -1,52 +1,50 @@
-const playerText = document.querySelector("#playerText");
-const computerText = document.querySelector("#computerText");
-const resultText = document.querySelector("#resultText");
+let playerScore = 0;
+let computerScore = 0;
 
-const decision = document.querySelectorAll(".decision");
+const options = ["rock", "paper", "scissors"];
+const playerChoiceDisplay = document.getElementById("playerChoice");
+const computerChoiceDisplay = document.getElementById("computerChoice");
+const resultText = document.getElementById("resultText");
+const computerScoreD = document.getElementById("computerScoreD");
+const playerScoreD = document.getElementById("playerScoreD");
 
-let player;
-let computer;
-let result;
+function playGame(playerChoice) {
+    const computerChoice = options[Math.floor(Math.random() * 3)];
+    let result = "";
 
-decision.forEach(button => button.addEventListener("click", () => {
+    
+    if (playerChoice === computerChoice) {
+        result = "Draw!";
+    } else if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rock") ||
+        (playerChoice === "scissors" && computerChoice === "paper")
+    ) {
+        result = "Player Wins!";
+        playerScore++;
+    } else {
+        result = "Computer Wins!";
+        computerScore++;
+    }
 
-    player = button.textContent;
-    computerTurn();
-    playerText.textContent = `Player: ${player}`;
-    computerText.textContent = `computer: ${computer}`;
-    resultText.textContent = checkWinner();
+    playerChoiceDisplay.textContent = getSymbol(playerChoice);
+    computerChoiceDisplay.textContent = getSymbol(computerChoice);
+    resultText.textContent = result;
+    playerScoreD.textContent = playerScore;
+    computerScoreD.textContent = computerScore;
 
-}));
-
-function computerTurn() {
-    const randNum = Math.flor(Math.random() * 3) + 1;
-
-    switch (andNum) {
-        case 1:
-            computer = "ROCK";
-            break;
-        case 2:
-            computer = "PAPER";
-            break;
-        case 3:
-            computer = "SCISSORS";
-            break;
+    resultText.classList.remove("greenText", "redText");
+    if (result === "Player Wins!") {
+        resultText.classList.add("greenText");
+    } else if (result === "Computer Wins!") {
+        resultText.classList.add("redText");
     }
 }
 
-function checkWinner() {
-    if (player == computer){
-        return "Draw";
-    }
-    else if(computer == "Rock"){
-        return (player == "PAPER") ? "Player Win!" : "Computer Win!"
-    }
-
-    else if(computer == "PAPER"){
-        return (player == "SCISSORS") ? "Player Win!" : "Computer Win!"
-    }
-
-    else if(computer == "SCISSORS"){
-        return (player == "ROCK") ? "Player Win!" : "Computer Win!"
+function getSymbol(choice) {
+    switch (choice) {
+        case "rock": return "✊";
+        case "paper": return "✋";
+        case "scissors": return "✌️";
     }
 }
