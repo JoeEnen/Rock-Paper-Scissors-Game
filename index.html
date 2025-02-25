@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="CSS stylesheet" href="index.css">
-    <link rel="JS stylesheet" href="styles.js">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,17 +14,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
         <div class="hlinks">
-            <h1>@ 2025</h1>
+            <h1>&copy; 2025</h1>
             <a href="https://www.linkedin.com/feed/" target="_blank" class="myname">Joseph Ndungu</a>
         </div>
         <div class="count-container">
-            <h1>Computer</h1>
-            <h1>Player</h1>
+            <h1 class="gameText" id="computerText">Computer:</h1>
+            <h1 class="gameText" id="playerText">Player: </h1>
         </div>
     </div>
 
@@ -37,7 +39,7 @@
     </section>
 
     <section class="actionarea">
-<p class="choice-displayer"> Currently Draw</p>
+        <p class="gameText" id="resultText">Result</p>
     </section>
 
     <section class="footer">
@@ -50,27 +52,27 @@
 
 
 
-    <section class="last-one">
+    <section class="last-one" id="options-container">
         <div class="choices">
-            <button class="decision" id="" onclick="playGame ('rock')">
+            <button class="decision" id="rock-btn">
                 <p class="symbol">✊</p>
                 <p> Rock</p>
             </button>
         </div>
         <div class="choices">
-            <button class="decision" id="" onclick="playGame ('paper')">
+            <button class="decision" id="paper-btn">
                 <p class="symbol">✋</p>
                 <p>Paper</p>
             </button>
         </div>
         <div class="choices">
-            <button class="decision" id="" onclick="playGame ('scissors')">
+            <button class="decision" id="scissors-btn">
                 <p class="symbol">✌️</p>
                 <p> Scissors</p>
             </button>
         </div>
     </section>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -38,12 +38,7 @@ body {
     color: black;
 }
 
-.count-container {
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-    gap: 6rem;
-}
+
 
 /* end of header section*/
 
@@ -53,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;      
+    height: 30vh;
 }
 
 
@@ -69,7 +64,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.choice-displayer {
+
+.actionarea p {
+    font-family: "Press to Start 2P", serif;
     font-size: 5rem;
     font-weight: 600;
 }
@@ -78,13 +75,14 @@ body {
     text-align: center;
     align-content: center;
 }
+
 /*.action-display for this section displayed in the footer as they share qualities).
 
 /*end of action area*/
 
 /*footer*/
 .footer {
-    height: 20.9vh;
+    height: 22.9vh;
     background-color: rgb(126, 240, 69);
     display: flex;
     align-items: center;
@@ -93,7 +91,7 @@ body {
 }
 
 .action-display {
-    align-items: center; 
+    align-items: center;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -123,7 +121,7 @@ body {
 .choices {
     width: 15rem;
     height: 15rem;
-    
+
 }
 
 .choices button {
