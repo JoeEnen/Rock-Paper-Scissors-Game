@@ -1,12 +1,12 @@
 /* Basic setups */
 * {
-    margin: 0rem 5rem;
+    margin: 0rem 7rem;
     padding: 0rem 1rem;
     box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 65.5%;
 }
 
 body {
@@ -26,11 +26,13 @@ body {
     background-color: rgb(126, 240, 69);
 }
 
-.hlinks, .count-container {
+.hlinks,
+.count-container {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
 }
+
 .hlinks h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 4rem;
@@ -39,7 +41,7 @@ body {
 .myname {
     font-size: 2rem;
     color: black;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 /* Hero section */
@@ -48,13 +50,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;      
+    height: 30vh;
     font-family: 'Times New Roman', Times, serif;
 }
-.heroe p{
-    font-size: 3rem;
+.action-display {
+    padding-bottom: 2rem;
+}
+.heroe p {
     text-align: center;
 }
+
+
 
 /* Action area */
 .actionarea {
@@ -77,25 +83,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 9rem;
 }
 
 .action-display {
-    align-items: center; 
+    align-items: center;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .symbols {
-    width: 13rem;
-    height: 13rem;
-    border: dashed black 3px;
+    width: 23rem;
+    height: 28rem;
+    border: dashed black 0.4rem;
     font-weight: bold;
     text-align: center;
-    font-size: 8rem;
+    font-size: 19rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+}
+
+.footer p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.atext {
+    font-size: 4rem;
 }
 
 /* Choices section */
@@ -109,8 +124,9 @@ body {
 }
 
 .choices button {
-    width: 15rem;
-    height: 15rem;
+    margin-top: 2rem;
+    width: 25rem;
+    height: 20rem;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -121,4 +137,8 @@ body {
 
 .redText {
     color: red;
+}
+
+.symbol {
+    font-size: 10rem;
 }
