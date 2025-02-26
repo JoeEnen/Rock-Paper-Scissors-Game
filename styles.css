@@ -43,7 +43,13 @@ body {
     color: black;
     margin-left: 1rem;
 }
-
+ 
+.scoreDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;   
+}
 /* Hero section */
 .heroe {
     background-color: rgb(126, 240, 69);
@@ -93,8 +99,8 @@ body {
 }
 
 .symbols {
-    width: 23rem;
-    height: 28rem;
+    width: 21rem;
+    height: 25rem;
     border: dashed black 0.4rem;
     font-weight: bold;
     text-align: center;
